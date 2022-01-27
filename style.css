@@ -1,0 +1,196 @@
+body {
+    padding: auto;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    padding: 120px;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+
+
+/* Presentation */
+
+.presentation {
+    margin: px;
+    padding: 30px;
+    width: 80%;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1E1F22;
+}
+
+.pink {
+    color: #FD0272;
+}
+
+.presentation-text {
+    font-size: 14px;
+    color: #828691;
+    line-height: 32px;
+}
+
+
+/* Cart */
+
+
+.cart {
+    padding: 30px 40px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    position: relative;
+    width: 60%;
+}
+
+/* Small yellow box */
+
+.yellow-block {
+    position: absolute;
+    background-color: #FFDD4D;
+    padding: 0 20px;
+    margin-top: -70px;
+    margin-left: -70px;
+}
+
+.yellow-block-text{
+    font-size: 12px;
+}
+
+/* Form in the card */
+
+.inside-cart {
+    justify-content: center;
+    margin: 10px;
+}
+
+.cart-title {
+    font-size: 32px;
+}
+.form-cart label{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.form-cart input[type="text"]  {
+    border: 3px solid #0000005A;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 12px;
+    opacity: 0.3;
+}
+
+a {
+    color: black;
+}
+
+#terms {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+input[type="checkbox"]:checked {
+    background: #FD0272;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: lightgray;
+    height: 16px;
+    width: 16px;
+    border: 1px solid white;
+    color: white;
+  }
+
+  input[type="checkbox"]:checked:after {
+    display: block;
+  }
+
+/* Button */
+
+.button {
+    text-align: center;
+}
+
+button {
+    background-color: #FD0272;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #FD0D16;
+}
+
+/* Welcome card */
+
+
+.popup-container {
+    display: none;
+    background-color: #000000CC;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.open{
+    display: flex;
+}
+
+.unpop-card {
+    width: 20px;
+    height: 20px;
+    background-color: #ECEDF2;
+    border-radius: 50% ;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.popup-card{
+    position: relative;
+    background-color: white;
+    width: 325px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 30px 0;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hide-paragraph {
+    color: #828691;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 912px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
